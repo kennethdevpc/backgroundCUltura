@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "nac_id": "ARGELIA",
+        "neighborhood_id": "B1",
+        "other_neighborhoods": "",
+        "place": "LUGAR",
+        "place_address": "DIRECCION",
+        "activity_date": "25-03-2022",
+        "start_time": "08:20PM",
+        "final_hour": "10:20PM",
+        "place_type_id": "PARQUE",
+        "place_description": "Parque estadal",
+        "place_image1": {},
+        "place_image2": {},
+        "beneficiary_list": ["300", "200", "100"]
+    },
+    {
+        "id": "2",
+        "nac_id": "ARGELIA",
+        "neighborhood_id": "B1",
+        "other_neighborhoods": "",
+        "place": "LUGAR",
+        "place_address": "DIRECCION",
+        "activity_date": "25-03-2022",
+        "start_time": "08:20PM",
+        "final_hour": "10:20PM",
+        "place_type_id": "PARQUE",
+        "place_description": "Parque estadal",
+        "place_image1": {},
+        "place_image2": {},
+        "beneficiary_list": ["300", "200", "100"]
+    },
+    {
+        "id": "3",
+        "nac_id": "ARGELIA",
+        "neighborhood_id": "B1",
+        "other_neighborhoods": "",
+        "place": "LUGAR",
+        "place_address": "DIRECCION",
+        "activity_date": "25-03-2022",
+        "start_time": "08:20PM",
+        "final_hour": "10:20PM",
+        "place_type_id": "PARQUE",
+        "place_description": "Parque estadal",
+        "place_image1": {},
+        "place_image2": {},
+        "beneficiary_list": ["300", "200", "100"]
+    }
+]

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "dist",
+    "module": "ESNext",
+    "target": "es2016",
+    "lib": ["DOM", "ESNext", "ES2015.Promise"],
+    "moduleResolution": "node",
+    "allowJs": true,
+    "types": ["vite/client"],
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "auto-imports.d.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/services/pecs.service.js",
+    "src/stores/binnacle.js",
+    "src/services/cultural_ensembles.service.js"
+, "src/services/methodologicalStrengthenings.services.js", "src/services/methodologicalStrengthenings.services.js", "src/services/methodologicalAccompaniments.service.js", "src/services/methodologicalAccompaniments.service.js"  ],
+  "exclude": ["node_modules"]
+}

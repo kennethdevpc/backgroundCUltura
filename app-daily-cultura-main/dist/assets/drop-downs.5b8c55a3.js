@@ -1,0 +1,1 @@
+import{m as e}from"./index.c93647e1.js";import{r as t}from"./validations.9fff8c5b.js";const n=e("dropdowns",{state:()=>({form:{name:""},form_rules:{name:{required:t}},validator:{generalData:!0}}),getters:{isValid:r=>!!r.validator.generalData,transpiledData(){return{...this.form}}},actions:{toggleGeneralData(r){this.$patch(a=>{a.validator.generalData=r})}}});export{n as u};

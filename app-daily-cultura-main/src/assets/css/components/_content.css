@@ -1,0 +1,26 @@
+.content {
+  padding: 0px 35px;
+  @apply min-w-0 min-h-screen bg-slate-100 flex-1 pt-20 pb-10 mt-1 relative dark:bg-darkmode-700;
+}
+
+.content:before {
+  content: "";
+  @apply w-full h-px block;
+}
+
+.content.content--top-nav {
+  border-radius: 35px 35px 0 0;
+  @apply pt-0 mt-5;
+}
+
+@media (max-width: 767px) {
+  .content {
+    padding: 17.5px 17.5px;
+    @apply max-w-full pt-0 mt-10;
+ }
+
+  .content.content--top-nav {
+    border-radius: 17.5px;
+    @apply pt-0 mt-5;
+  }
+}

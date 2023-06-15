@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+#dist
+# dist-ssr
+*.local
+.env
+auto-imports.d.ts
+pnpm-lock.yaml
+.vscode/settings.json

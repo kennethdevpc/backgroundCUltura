@@ -1,0 +1,500 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+    <style type="text/css">
+        body {
+            font-family: Verdana;
+            margin-top: 150px;
+        }
+
+        .even {
+            background: #fbf8f0;
+        }
+
+        .odd {
+            background: #fefcf9;
+        }
+
+        .page
+        {
+            page-break-after: always;
+            page-break-inside: avoid;
+        }
+
+        .ocultarcolumnas{
+            visibility:hidden;
+        }
+
+        table , td, th {
+            border: 1px solid #595959;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 3px;
+            width: 30px;
+            height: 25px;
+        }
+        th {
+            background: #f0e6cc;
+        }
+        .even {
+            background: #fbf8f0;
+        }
+        .odd {
+            background: #fefcf9;
+        }
+        p{
+            font-size:16px;
+        }
+    </style>
+</head>
+
+<body class="img1">
+    <div class="">
+        <tr>
+            <table width="100%" style="">
+                <thead>
+                    <tr>
+                        <td class="ocultarcolumnas" style="width: 2%">1</td>
+                        <td class="ocultarcolumnas" style="width: 2%">2</td>
+                        <td class="ocultarcolumnas" style="width: 2%">3</td>
+                        <td class="ocultarcolumnas" style="width: 2%">4</td>
+                        <td class="ocultarcolumnas" style="width: 2%">5</td>
+                        <td class="ocultarcolumnas" style="width: 2%">6</td>
+                        <td class="ocultarcolumnas" style="width: 2%">7</td>
+                        <td class="ocultarcolumnas" style="width: 2%">8</td>
+                        <td class="ocultarcolumnas" style="width: 2%">9</td>
+                        <td class="ocultarcolumnas" style="width: 2%">10</td>
+                        <td class="ocultarcolumnas" style="width: 2%">11</td>
+                        <td class="ocultarcolumnas" style="width: 2%">12</td>
+                        <td class="ocultarcolumnas" style="width: 2%">13</td>
+                        <td class="ocultarcolumnas" style="width: 2%">14</td>
+                        <td class="ocultarcolumnas" style="width: 2%">15</td>
+                        <td class="ocultarcolumnas" style="width: 2%">16</td>
+                        <td class="ocultarcolumnas" style="width: 2%">17</td>
+                        <td class="ocultarcolumnas" style="width: 2%">18</td>
+                        <td class="ocultarcolumnas" style="width: 2%">19</td>
+                        <td class="ocultarcolumnas" style="width: 2%">20</td>
+                        <td class="ocultarcolumnas" style="width: 2%">21</td>
+                        <td class="ocultarcolumnas" style="width: 2%">22</td>
+                        <td class="ocultarcolumnas" style="width: 2%">23</td>
+                        <td class="ocultarcolumnas" style="width: 2%">24</td>
+                        <td class="ocultarcolumnas" style="width: 2%">25</td>
+                        <td class="ocultarcolumnas" style="width: 2%">26</td>
+                        <td class="ocultarcolumnas" style="width: 2%">27</td>
+                        <td class="ocultarcolumnas" style="width: 2%">28</td>
+                        <td class="ocultarcolumnas" style="width: 2%">29</td>
+                        <td class="ocultarcolumnas" style="width: 2%">30</td>
+                        <td class="ocultarcolumnas" style="width: 2%">31</td>
+                        <td class="ocultarcolumnas" style="width: 2%">32</td>
+                        <td class="ocultarcolumnas" style="width: 2%">33</td>
+                        <td class="ocultarcolumnas" style="width: 2%">34</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="34" style="background: #164E63">
+                            <h3 style="text-align: center; color:#ffffff;">BITÁCORA TRANSFERENCIA PSICOSOCIAL </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="34" style="background: #164E63">
+                            <h3 style="text-align: center; color:#ffffff;">{{ $titulos['Titulo1'] }}</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="9" rowspan="2">
+                            <p style="text-align: left;margin-top: -1%;margin-bottom:0%">
+                                <b>1.1 Facilitador:</b>
+                            </p>
+                        </td>
+                        <td colspan="8" rowspan="2">
+                            <p style="text-align: left;margin-top: -1%;margin-bottom:0%">
+                                {{ $data->user->name}}
+                            </p>
+                        </td>
+                        <td colspan="9" rowspan="2">
+                            <p style="text-align: left;margin-top: -1%;margin-bottom:0%">
+                                <b>1.4 Fecha:</b>
+                            </p>
+                        </td>
+                        <td colspan="8" rowspan="2">
+                            <p style="text-align: left;margin-top: -1%;margin-bottom:0%">
+                                {{ $data->activity_date }}
+                            </p>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td colspan="9" rowspan="2">
+                            <p style="text-align: left;margin-top: -1%;margin-bottom:0%">
+                                <b>1.2 Número de participantes:</b>
+                            </p>
+                        </td>
+                        <td colspan="8" rowspan="2">
+                            <p style="text-align: left;margin-top: -1%;margin-bottom:0%">
+                                {{ $data->assistants->count() }}
+                            </p>
+                        </td>
+                        <td colspan="9" rowspan="2">
+                            <p style="text-align: left;margin-top: -1%;margin-bottom:0%">
+                                <b>1.5 Hora Inicio:</b>
+                            </p>
+                        </td>
+                        <td colspan="8" rowspan="2">
+                            <p style="text-align: left;margin-top: -1%;margin-bottom:0%">
+                                {{ $data->start_time }}
+                            </p>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td colspan="9" rowspan="2">
+                            <p style="text-align: left;margin-top: -1%;margin-bottom:0%">
+                                <b>1.3 Nodo de atención cultural:</b>
+                            </p>
+                        </td>
+                        <td colspan="8" rowspan="2">
+                            <p style="text-align: left;margin-top: -1%;margin-bottom:0%">
+                                {{ $data->nac->name }}
+                            </p>
+                        </td>
+                        <td colspan="9" rowspan="2">
+                            <p style="text-align: left;margin-top: -1%;margin-bottom:0%">
+                                <b>1.6 Hora Final:</b>
+                            </p>
+                        </td>
+                        <td colspan="8" rowspan="2">
+                            <p style="text-align: left;margin-top: -1%;margin-bottom:0%">
+                                {{ $data->final_hour }}
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table width="100%" style="">
+                <thead>
+                    <tr>
+                        <td class="ocultarcolumnas" style="width: 2%">1</td>
+                        <td class="ocultarcolumnas" style="width: 2%">2</td>
+                        <td class="ocultarcolumnas" style="width: 2%">3</td>
+                        <td class="ocultarcolumnas" style="width: 2%">4</td>
+                        <td class="ocultarcolumnas" style="width: 2%">5</td>
+                        <td class="ocultarcolumnas" style="width: 2%">6</td>
+                        <td class="ocultarcolumnas" style="width: 2%">7</td>
+                        <td class="ocultarcolumnas" style="width: 2%">8</td>
+                        <td class="ocultarcolumnas" style="width: 2%">9</td>
+                        <td class="ocultarcolumnas" style="width: 2%">10</td>
+                        <td class="ocultarcolumnas" style="width: 2%">11</td>
+                        <td class="ocultarcolumnas" style="width: 2%">12</td>
+                        <td class="ocultarcolumnas" style="width: 2%">13</td>
+                        <td class="ocultarcolumnas" style="width: 2%">14</td>
+                        <td class="ocultarcolumnas" style="width: 2%">15</td>
+                        <td class="ocultarcolumnas" style="width: 2%">16</td>
+                        <td class="ocultarcolumnas" style="width: 2%">17</td>
+                        <td class="ocultarcolumnas" style="width: 2%">18</td>
+                        <td class="ocultarcolumnas" style="width: 2%">19</td>
+                        <td class="ocultarcolumnas" style="width: 2%">20</td>
+                        <td class="ocultarcolumnas" style="width: 2%">21</td>
+                        <td class="ocultarcolumnas" style="width: 2%">22</td>
+                        <td class="ocultarcolumnas" style="width: 2%">23</td>
+                        <td class="ocultarcolumnas" style="width: 2%">24</td>
+                        <td class="ocultarcolumnas" style="width: 2%">25</td>
+                        <td class="ocultarcolumnas" style="width: 2%">26</td>
+                        <td class="ocultarcolumnas" style="width: 2%">27</td>
+                        <td class="ocultarcolumnas" style="width: 2%">28</td>
+                        <td class="ocultarcolumnas" style="width: 2%">29</td>
+                        <td class="ocultarcolumnas" style="width: 2%">30</td>
+                        <td class="ocultarcolumnas" style="width: 2%">31</td>
+                        <td class="ocultarcolumnas" style="width: 2%">32</td>
+                        <td class="ocultarcolumnas" style="width: 2%">33</td>
+                        <td class="ocultarcolumnas" style="width: 2%">34</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="34" style="background: #164E63">
+                            <h3 style="text-align: center; color:#ffffff;">{{ $titulos['Titulo2'] }}</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="13" rowspan="2">
+                            <p style="text-align: left;margin-top: 0%;margin-bottom:0%">
+                                <b>2.1 Objetivo de la jornada</b>
+                            </p>
+                        </td>
+                        <td colspan="21" rowspan="2">
+                            <p style="text-align: justify;margin-top: 0%;margin-bottom:0%">
+                                {{ $data->objective_day }}
+                            </p>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td colspan="13" rowspan="2">
+                            <p style="text-align: left;margin-top: 0%;margin-bottom:0%">
+                                <b>2.2 Temas a tratar</b>
+                            </p>
+                        </td>
+                        <td colspan="21" rowspan="2">
+                            <p style="text-align: justify;margin-top: 0%;margin-bottom:0%">
+                                {{ $data->themes_day }}
+                            </p>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td colspan="13" rowspan="2">
+                            <p style="text-align: left;margin-top: 0%;margin-bottom:0%">
+                                <b>2.3 Desarrollo de los temas</b>
+                            </p>
+                        </td>
+                        <td colspan="21" rowspan="2">
+                            <p style="text-align: justify;margin-top: 0%;margin-bottom:0%">
+                                {{ $data->development_themes }}
+                            </p>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td colspan="13" rowspan="2">
+                            <p style="text-align: left;margin-top: 0%;margin-bottom:0%">
+                                <b>2.4 Conclusiones y reflexiones y compromisos de la jornada</b>
+                            </p>
+                        </td>
+                        <td colspan="21" rowspan="2">
+                            <p style="text-align: justify;margin-top: 0%;margin-bottom:0%">
+                                {{ $data->conclusions_reflections_commitments }}
+                            </p>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td colspan="13" rowspan="2">
+                            <p style="text-align: left;margin-top: 0%;margin-bottom:0%">
+                                <b>2.5 Reporte alertas para hacer seguimiento</b>
+                            </p>
+                        </td>
+                        <td colspan="21" rowspan="2">
+                            <p style="text-align: justify;margin-top: 0%;margin-bottom:0%">
+                                {{ $data->report_followup_alerts == 0 ? 'Ninguno.' : '' }}
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table width="100%" style="" class="page">
+                <thead>
+                    <tr>
+                        <td class="ocultarcolumnas" style="width: 2%">1</td>
+                        <td class="ocultarcolumnas" style="width: 2%">2</td>
+                        <td class="ocultarcolumnas" style="width: 2%">3</td>
+                        <td class="ocultarcolumnas" style="width: 2%">4</td>
+                        <td class="ocultarcolumnas" style="width: 2%">5</td>
+                        <td class="ocultarcolumnas" style="width: 2%">6</td>
+                        <td class="ocultarcolumnas" style="width: 2%">7</td>
+                        <td class="ocultarcolumnas" style="width: 2%">8</td>
+                        <td class="ocultarcolumnas" style="width: 2%">9</td>
+                        <td class="ocultarcolumnas" style="width: 2%">10</td>
+                        <td class="ocultarcolumnas" style="width: 2%">11</td>
+                        <td class="ocultarcolumnas" style="width: 2%">12</td>
+                        <td class="ocultarcolumnas" style="width: 2%">13</td>
+                        <td class="ocultarcolumnas" style="width: 2%">14</td>
+                        <td class="ocultarcolumnas" style="width: 2%">15</td>
+                        <td class="ocultarcolumnas" style="width: 2%">16</td>
+                        <td class="ocultarcolumnas" style="width: 2%">17</td>
+                        <td class="ocultarcolumnas" style="width: 2%">18</td>
+                        <td class="ocultarcolumnas" style="width: 2%">19</td>
+                        <td class="ocultarcolumnas" style="width: 2%">20</td>
+                        <td class="ocultarcolumnas" style="width: 2%">21</td>
+                        <td class="ocultarcolumnas" style="width: 2%">22</td>
+                        <td class="ocultarcolumnas" style="width: 2%">23</td>
+                        <td class="ocultarcolumnas" style="width: 2%">24</td>
+                        <td class="ocultarcolumnas" style="width: 2%">25</td>
+                        <td class="ocultarcolumnas" style="width: 2%">26</td>
+                        <td class="ocultarcolumnas" style="width: 2%">27</td>
+                        <td class="ocultarcolumnas" style="width: 2%">28</td>
+                        <td class="ocultarcolumnas" style="width: 2%">29</td>
+                        <td class="ocultarcolumnas" style="width: 2%">30</td>
+                        <td class="ocultarcolumnas" style="width: 2%">31</td>
+                        <td class="ocultarcolumnas" style="width: 2%">32</td>
+                        <td class="ocultarcolumnas" style="width: 2%">33</td>
+                        <td class="ocultarcolumnas" style="width: 2%">34</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="34" style="background: #164E63">
+                            <h3 style="text-align: center; color:#ffffff;">{{ $titulos['Titulo3'] }}</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="17" rowspan="2">
+                            <p style="text-align: left;margin-top: -1%;margin-bottom:0%">
+                                <b>3.1 Foto que evidencia el desarrollo de la transferencia realizada</b>
+                            </p>
+                        </td>
+                        <td colspan="17" rowspan="2">
+                            <p style="text-align: left;margin-top: -1%;margin-bottom:0%">
+                                <b>3.2 Foto que evidencie la participación de los asistentes en la transferencia</b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td colspan="17" rowspan="2">
+                            <center>
+                                @php
+                                    $im1 = imagecreatefromwebp(storage_path().'/app/public/'. $data->development_activity_image);
+                                    imagejpeg($im1, storage_path().'/app/public/'.substr( $data->development_activity_image,-5).'.jpeg', 100);
+                                @endphp
+                                <img style="width:60%;height: 450px;" src="data:image/png;base64,{{ base64_encode(file_get_contents(storage_path().'/app/public/'.substr($data->development_activity_image,-5).'.jpeg'))}}">
+                            </center>
+                        </td>
+                        <td colspan="17" rowspan="2">
+                            <center>
+                                @php
+                                    $im2 = imagecreatefromwebp(storage_path().'/app/public/'. $data->evidence_participation_image);
+                                    imagejpeg($im2, storage_path().'/app/public/'.substr( $data->evidence_participation_image,-5).'.jpeg', 100);
+                                @endphp
+                                <img style="width:60%;height: 450px;" src="data:image/png;base64,{{ base64_encode(file_get_contents(storage_path().'/app/public/'.substr($data->evidence_participation_image,-5).'.jpeg'))}}">
+                            </center>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table width="100%" style="">
+                <thead>
+                    <tr>
+                        <td class="ocultarcolumnas" style="width: 2%">1</td>
+                        <td class="ocultarcolumnas" style="width: 2%">2</td>
+                        <td class="ocultarcolumnas" style="width: 2%">3</td>
+                        <td class="ocultarcolumnas" style="width: 2%">4</td>
+                        <td class="ocultarcolumnas" style="width: 2%">5</td>
+                        <td class="ocultarcolumnas" style="width: 2%">6</td>
+                        <td class="ocultarcolumnas" style="width: 2%">7</td>
+                        <td class="ocultarcolumnas" style="width: 2%">8</td>
+                        <td class="ocultarcolumnas" style="width: 2%">9</td>
+                        <td class="ocultarcolumnas" style="width: 2%">10</td>
+                        <td class="ocultarcolumnas" style="width: 2%">11</td>
+                        <td class="ocultarcolumnas" style="width: 2%">12</td>
+                        <td class="ocultarcolumnas" style="width: 2%">13</td>
+                        <td class="ocultarcolumnas" style="width: 2%">14</td>
+                        <td class="ocultarcolumnas" style="width: 2%">15</td>
+                        <td class="ocultarcolumnas" style="width: 2%">16</td>
+                        <td class="ocultarcolumnas" style="width: 2%">17</td>
+                        <td class="ocultarcolumnas" style="width: 2%">18</td>
+                        <td class="ocultarcolumnas" style="width: 2%">19</td>
+                        <td class="ocultarcolumnas" style="width: 2%">20</td>
+                        <td class="ocultarcolumnas" style="width: 2%">21</td>
+                        <td class="ocultarcolumnas" style="width: 2%">22</td>
+                        <td class="ocultarcolumnas" style="width: 2%">23</td>
+                        <td class="ocultarcolumnas" style="width: 2%">24</td>
+                        <td class="ocultarcolumnas" style="width: 2%">25</td>
+                        <td class="ocultarcolumnas" style="width: 2%">26</td>
+                        <td class="ocultarcolumnas" style="width: 2%">27</td>
+                        <td class="ocultarcolumnas" style="width: 2%">28</td>
+                        <td class="ocultarcolumnas" style="width: 2%">29</td>
+                        <td class="ocultarcolumnas" style="width: 2%">30</td>
+                        <td class="ocultarcolumnas" style="width: 2%">31</td>
+                        <td class="ocultarcolumnas" style="width: 2%">32</td>
+                        <td class="ocultarcolumnas" style="width: 2%">33</td>
+                        <td class="ocultarcolumnas" style="width: 2%">34</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="34" style="background: #164E63">
+                            <h3 style="text-align: center; color:#ffffff;">{{ $titulos['Titulo4'] }}</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" rowspan="2">
+                            <p style="text-align: center;margin-top: -1%;margin-bottom:0%">
+                                <b>No</b>
+                            </p>
+                        </td>
+                        <td colspan="4" rowspan="2">
+                            <p style="text-align: center;margin-top: -1%;margin-bottom:0%">
+                                <b>NAC</b>
+                            </p>
+                        </td>
+                        <td colspan="6" rowspan="2">
+                            <p style="text-align: center;margin-top: -1%;margin-bottom:0%">
+                                <b>Nombre</b>
+                            </p>
+                        </td>
+                        <td colspan="6" rowspan="2">
+                            <p style="text-align: center;margin-top: -1%;margin-bottom:0%">
+                                <b>Documento de <br> identidad</b>
+                            </p>
+                        </td>
+                        <td colspan="4" rowspan="2">
+                            <p style="text-align: center;margin-top: -1%;margin-bottom:0%">
+                                <b>Cargo</b>
+                            </p>
+                        </td>
+                        <td colspan="4" rowspan="2">
+                            <p style="text-align: center;margin-top: -1%;margin-bottom:0%">
+                                <b>Teléfono</b>
+                            </p>
+                        </td>
+                        <td colspan="6" rowspan="2">
+                            <p style="text-align: center;margin-top: -1%;margin-bottom:0%">
+                                <b>Email</b>
+                            </p>
+                        </td>
+                    </tr>
+                    @foreach ($data->assistants as $key => $assistants)
+                        <tr></tr>
+                        <tr>
+                            <td colspan="4" rowspan="2">
+                                <p style="text-align: center;margin-top: -1%;margin-bottom:0%">
+                                    {{ $key + 1 }}
+                                </p>
+                            </td>
+                            <td colspan="4" rowspan="2">
+                                <p style="text-align: center;margin-top: -1%;margin-bottom:0%">
+                                    {{ $assistants->nac->name }}
+                                </p>
+                            </td>
+                            <td colspan="6" rowspan="2">
+                                <p style="text-align: center;margin-top: -1%;margin-bottom:0%">
+                                    {{ $assistants->assistant_name }}
+                                </p>
+                            </td>
+                            <td colspan="6" rowspan="2">
+                                <p style="text-align: center;margin-top: -1%;margin-bottom:0%">
+                                    {{ $assistants->assistant_document_number }}
+                                </p>
+                            </td>
+                            <td colspan="4" rowspan="2">
+                                <p style="text-align: center;margin-top: -1%;margin-bottom:0%">
+                                    {{ $assistants->assistant_position }}
+                                </p>
+                            </td>
+                            <td colspan="4" rowspan="2">
+                                <p style="text-align: center;margin-top: -1%;margin-bottom:0%">
+                                    {{ $assistants->assistant_phone }}
+                                </p>
+                            </td>
+                            <td colspan="6" rowspan="2">
+                                <p style="text-align: center;margin-top: -1%;margin-bottom:0%">
+                                    {{ $assistants->assistant_email }}
+                                </p>
+                            </td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </tr>
+    </div>
+</body>
+
+</html>
